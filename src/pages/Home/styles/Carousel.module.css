@@ -1,0 +1,99 @@
+.contain {
+  position: relative;
+  margin-top: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  gap: 3%;
+  padding: 0 50px;
+}
+.Carousel {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 25vw);
+  column-gap: 4vw;
+  scroll-behavior: smooth;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  width: 25vw;
+  padding: 15px;
+  padding-top: 6vh;
+  justify-content: center;
+}
+.card img{
+  width: 100%;
+  height: 50vh;
+}
+.card span{
+  font-family: "Cinzel", serif;
+  color: #ad8b3a;
+  font-size: 1.2em;
+}
+.container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prebtn {
+  transform: scale(1.5);
+  border:1px solid #ad8b3a;
+  color: #ad8b3a;
+  border-radius: 25px;
+  padding: 3px 0;
+  padding-left: 7.5px;
+}
+.postbtn {
+  transform: scale(1.5);
+  border:1px solid #ad8b3a;
+  color: #ad8b3a;
+  border-radius: 25px;
+  padding: 3px;
+}
+@media(max-width:500px){
+  .contain{
+    margin-top: 20px;
+  }
+  .container{
+    padding:0;
+  }
+  .TxtWrapper{
+    width: 40%;
+    font-size: 2em;
+    padding: 0;
+    line-height: 5vh;
+  }
+  .Carousel{
+    column-gap:10vw;
+  }
+  .card{
+    padding: 10px;
+    gap: 3vh;
+    width: 30vw;
+  }
+  .card img{
+    height: 30vh;
+  }
+  .card p {
+    font-size: 10px;
+  }
+  .card span{
+    font-size: 0.8em;
+  }
+  .data img{
+    width:20px;
+    height: 20px;
+  }
+  .prebtn {
+    transform: scale(0.8);
+  }
+  .postbtn{
+    transform: scale(0.8);
+    right: 38%;
+  }
+}

@@ -1,0 +1,49 @@
+.book{
+    display: flex;
+    list-style-type: none;
+    font-family:"Inter", sans-serif;
+    position: absolute;
+    bottom:4vh;
+    left: 12.20vw;
+}
+.book ul{
+    height: 5vh;
+    display:flex;
+    background-color: white;
+    width: 90%;
+    font-size: 1.3em;
+    align-items: center;
+    padding: 10px 5px;
+    font-weight: 200;
+    list-style-type: none;
+}
+.book ul li {
+    color: #45443F;
+}
+.name{
+    padding-right: 100px;
+    padding-left: 20px;
+}
+.date{
+    border-left: 0.5px solid #45443F;
+    border-right: 0.5px solid #45443F;
+    padding: 0px 10px;
+}
+.info{
+    border-right: 0.5px solid #45443F;
+    padding: 0px 10px;
+}
+.misc{
+    padding: 0px 10px;
+}
+.booknow{
+    display: flex;
+    background-color: #ad8b3a;
+    height:5vh;
+    padding: 10px 10px;
+    font-weight: 600;
+    color: white;
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+}
