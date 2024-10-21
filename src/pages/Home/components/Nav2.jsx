@@ -7,18 +7,20 @@ const Nav2 = ({ setSec, sec }) => {
     <div className={styles.Nav2wrapper}>
       <ul>
         {/* <Link to="/rooms"> */}
+        <a href="#Rooms">
           <li
             onClick={() => setSec("rooms")}
             className={sec === "rooms" ? styles.selected : styles.un}>
             ROOMS
           </li>
+        </a>
         {/* </Link> */}
         {/* <Link to="/"> */}
-          <li
-            onClick={() => setSec("overview")}
-            className={sec === "overview" ? styles.selected : styles.un}>
-            OVERVIEW
-          </li>
+        <li
+          onClick={() => setSec("overview")}
+          className={sec === "overview" ? styles.selected : styles.un}>
+          OVERVIEW
+        </li>
         {/* </Link> */}
         {/* <li
           // onClick={() => setSec("offers")}
@@ -26,11 +28,13 @@ const Nav2 = ({ setSec, sec }) => {
           OFFERS
         </li> */}
         {/* <Link to="/dining"> */}
+        <a href="#Cafe">
           <li
             onClick={() => setSec("dining")}
             className={sec === "dining" ? styles.selected : styles.un}>
             DINING
           </li>
+        </a>
         {/* </Link> */}
         {/* <li
           // onClick={() => setSec("venues")}
@@ -43,25 +47,25 @@ const Nav2 = ({ setSec, sec }) => {
           WELLNESS
         </li> */}
         {/* <Link to="/experience"> */}
-          <li
-            onClick={() => setSec("experience")}
-            className={sec === "experience" ? styles.selected : styles.un}>
-            EXPERIENCE
-          </li>
+        <li
+          onClick={() => setSec("experience")}
+          className={sec === "experience" ? styles.selected : styles.un}>
+          EXPERIENCE
+        </li>
         {/* </Link>
         <Link to="/gallery"> */}
-          <li
-            onClick={() => setSec("gallery")}
-            className={sec === "gallery" ? styles.selected : styles.un}>
-            GALLERY
-          </li>
+        <li
+          onClick={() => setSec("gallery")}
+          className={sec === "gallery" ? styles.selected : styles.un}>
+          GALLERY
+        </li>
         {/* </Link>
         <Link> */}
-          <li
-            // onClick={() => setSec("attractions")}
-            className={sec === "attractions" ? styles.selected : styles.un}>
-            ATTRACTIONS
-          </li>
+        <li
+          // onClick={() => setSec("attractions")}
+          className={sec === "attractions" ? styles.selected : styles.un}>
+          ATTRACTIONS
+        </li>
         {/* </Link> */}
       </ul>
     </div>

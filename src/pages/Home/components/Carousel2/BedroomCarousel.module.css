@@ -1,0 +1,98 @@
+.titletext {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  text-align: center;
+  display: flex;
+  font-family: "Cinzel", serif;
+  font-size: 3em;
+  color: #45443f;
+  width: 70%;
+}
+.desc {
+  font-family: "Inter";
+  font-size: 1.1em;
+  font-weight: 200;
+  text-align: center;
+  width: 65%;
+  margin: 2em 0;
+}
+.dont {
+  display: none;
+}
+.titletext span {
+  color: #ad8b3a;
+}
+.titletext span:hover {
+  cursor: pointer;
+}
+
+.leftButton {
+  position: absolute;
+  left: 10px;
+  top: 55%;
+  transform: translateY(-50%);
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #ad8b3a;
+  background-color: rgba(255, 255, 255, 0.72); /* Bootstrap primary color */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+  border: 3px solid #ad8b3a;
+  padding-left: 15px;
+}
+.rightButton {
+  position: absolute;
+  right: 10px;
+  top: 55%;
+  transform: translateY(-50%);
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #ad8b3a;
+  background-color: rgba(255, 255, 255, 0.72); /* Bootstrap primary color */
+  border: none;
+  border: 3px solid #ad8b3a;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+.elemdesc{
+    padding: 20px;
+    right: 0;
+    width: 80%;
+}
+.elemdesc h3{
+    font-family: "Cinzel", serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    padding: auto;
+}
+.elemdesc p{
+    font-family: "Inter";
+    font-size: 0.9em;
+    font-weight: 200;
+}
+.elemdesc button{
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-family: "Inter";
+    padding: 15px 30px;
+    margin-right: 20px;
+}
+.viewbtn{
+    background-color: #ad8b3a;
+    border: none;
+    border: 1px solid #ad8b3a;
+    letter-spacing: 0.2em;
+    color: white;
+}
+.galbtn{
+    background-color: white;
+    border: 1px solid #ad8b3a;
+    letter-spacing: 0.2em;
+    color: #ad8b3a;
+}

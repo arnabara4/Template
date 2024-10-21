@@ -1,0 +1,43 @@
+.slick-slide {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.slick-center {
+  transform: scale(1.05); /* Optional: Slightly enlarge the centered slide */
+}
+
+.slick-active {
+  opacity: 1; /* Ensure active slide is fully visible */
+}
+
+.slick-slide:not(.slick-center) {
+  opacity: 0.5; /* Reduce opacity for non-centered slides */
+}
+.slick-slide:not(.slick-center) button {
+    display: none; /* Reduce opacity for non-centered slides */
+  }
+  .slick-slide:not(.slick-center) p{
+    display: none; /* Reduce opacity for non-centered slides */
+  }
+/* Dots styling */
+.slick-dots li button:before {
+  color: #888; /* Custom color for the dots */
+}
+
+/* Arrow styling */
+.slick-prev,
+.slick-next {
+  color: black;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #555;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
