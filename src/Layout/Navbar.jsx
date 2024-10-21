@@ -16,16 +16,24 @@ const Navbar = () => {
           className={styles.nav}>
           DESTINATION
         </li>
-        <li
-          to="/hotels"
-          className={styles.nav}>
-          HOTELS
-        </li>
-        <li
-          to="/dining"
-          className={styles.nav}>
-          DINING
-        </li>
+        <a
+          href="#Rooms"
+          style={{ textDecoration: "none", color: "inherit" }}>
+          <li
+            to="/hotels"
+            className={styles.nav}>
+            HOTELS
+          </li>
+        </a>
+        <a
+          href="#Cafe"
+          style={{ textDecoration: "none", color: "inherit" }}>
+          <li
+            to="/dining"
+            className={styles.nav}>
+            DINING
+          </li>
+        </a>
         <li
           to="/offers"
           className={styles.nav}>
