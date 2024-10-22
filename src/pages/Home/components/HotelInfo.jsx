@@ -100,7 +100,7 @@ const HotelInfo = () => {
                 src={Logo7}
                 alt="pic"
               />
-              <p>reservations.mumbai@ihcltata.com</p>
+              <p>mumbai@ihcltata.com</p>
             </div>
           </div>
           <div className={styles.comp}>

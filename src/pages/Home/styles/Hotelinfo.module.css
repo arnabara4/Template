@@ -62,7 +62,7 @@
         margin: 0px;
     }
     .comp{
-        margin: 10px;
+        margin: 5px;
     }
     .comp div{
         font-size: 0.5em;
@@ -70,7 +70,7 @@
         gap:2px;
     }
     .comp div img{
-        transform: scale(0.7);
+        transform: scale(0.5);
     }
     .info{
         display: flex;
@@ -91,7 +91,7 @@
         gap:2px;
     }
     .comp div img{
-        transform: scale(0.6);
+        transform: scale(0.5);
     }
   }
 
