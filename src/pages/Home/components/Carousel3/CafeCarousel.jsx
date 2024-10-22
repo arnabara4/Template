@@ -84,8 +84,17 @@ const CafeCarousel = () => {
     arrows: true,
     autoplay: false,
     autoplaySpeed: 3000,
-    centerMode: true, // Enable center mode to show partial slides
-    centerPadding: "250px", // Padding to show part of next/prev slides Remove extra padding between slides
+    centerMode: true,
+    centerPadding: "250px",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: "50px",
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (
@@ -104,16 +113,15 @@ const CafeCarousel = () => {
         </p>
         <p className={styles.desc}>
           Tuck into our culinary delights meticulously crafted by our master
-          chefs at The Taj Mahal Palace, Mumbai. Discover a splendid array of
-          dining and bar options, featuring some of the best restaurants in
-          Mumbai. From Indian and Chinese cuisines to delectable international
-          offerings, savour the enchantment{" "}
+          chefs at The Taj Mahal Palace, Mumbai.{" "}
           {!more ? <span onClick={() => setMore(true)}>{"..>>"}</span> : ""}
           <p className={more ? styles.show : styles.dont}>
-            of 5-star restaurants in Mumbai. Our skilled mixologists and
-            sommeliers await to guide you through an exploration of inventive
-            cocktails and exceptional vintages from our carefully curated
-            collection.
+            Discover a splendid array of dining and bar options, featuring some
+            of the best restaurants in Mumbai. From Indian and Chinese cuisines
+            to delectable international offerings, savour the enchantment of
+            5-star restaurants in Mumbai. Our skilled mixologists and sommeliers
+            await to guide you through an exploration of inventive cocktails and
+            exceptional vintages from our carefully curated collection.
             {more ? <span onClick={() => setMore(false)}>{"<<"}</span> : ""}
           </p>
         </p>
@@ -134,11 +142,11 @@ const CafeCarousel = () => {
               position: "relative",
             }}>
             <img
+              className={styles.elemimg}
               src={room.image}
               alt={room.title}
-              style={{ width: "90%", height: "auto", borderRadius: "" }} // Maintain the fixed width
             />
-            <div className={styles.elemdesc}>
+            {/* <div className={styles.elemdesc}>
               <h3>{room.name}</h3>
               <p>{room.description}</p>
               <div>
@@ -162,7 +170,7 @@ const CafeCarousel = () => {
                 </p>
               </div>
               <span className={styles.no}>{room.number}</span>
-            </div>
+            </div> */}
           </div>
         ))}
       </Slider>

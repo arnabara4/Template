@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
 }
+.elemimg {
+  width: 90%;
+  height: auto;
+}
 .title {
   text-align: center;
   display: flex;
@@ -17,7 +21,7 @@
   font-weight: 200;
   text-align: center;
   width: 65%;
-  margin: 2em 0;
+  margin: 1em 0;
 }
 .dont {
   display: none;
@@ -113,4 +117,25 @@
 .no {
   color: #ad8b3a;
   margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.5em;
+  }
+  .elemimg {
+    width: 80%;
+    padding-left: 10.5%;
+  }
+  .desc {
+    font-size: 0.75em;
+  }
+  .leftButton {
+    transform: scale(0.75);
+    top: 65%;
+  }
+  .rightButton {
+    top: 65%;
+    transform: scale(0.75);
+  }
 }

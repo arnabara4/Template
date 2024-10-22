@@ -11,18 +11,13 @@ const Navbar = () => {
         alt="pic"
       />
       <nav>
-        <li
-          to="/destination"
-          className={styles.nav}>
-          DESTINATION
-        </li>
         <a
           href="#Rooms"
           style={{ textDecoration: "none", color: "inherit" }}>
           <li
             to="/hotels"
             className={styles.nav}>
-            HOTELS
+            ROOMS
           </li>
         </a>
         <a
@@ -31,27 +26,12 @@ const Navbar = () => {
           <li
             to="/dining"
             className={styles.nav}>
-            DINING
+            CAFE
           </li>
         </a>
-        <li
-          to="/offers"
-          className={styles.nav}>
-          OFFERS
-        </li>
-        <li
-          to="/memberships"
-          className={styles.nav}>
-          MEMBERSHIPS
-        </li>
-        <li
-          to="/more"
-          className={styles.nav}>
-          MORE
-        </li>
       </nav>
-      <div className={styles.login}>LOGIN / JOIN</div>
-      <button className={styles.book}>BOOK A STAY</button>
+      {/* <div className={styles.login}>LOGIN / JOIN</div>
+      <button className={styles.book}>BOOK A STAY</button> */}
     </div>
   );
 };

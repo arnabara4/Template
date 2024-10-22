@@ -17,7 +17,7 @@
   font-weight: 200;
   text-align: center;
   width: 65%;
-  margin: 2em 0;
+  margin: 1em 0;
 }
 .dont {
   display: none;
@@ -60,39 +60,78 @@
   cursor: pointer;
   z-index: 1;
 }
-.elemdesc{
-    padding: 20px;
-    right: 0;
-    width: 80%;
+.elemimg {
+  width: 90%;
+  height: auto;
 }
-.elemdesc h3{
-    font-family: "Cinzel", serif;
-    font-weight: 200;
+.elemdesc {
+  padding: 20px;
+  right: 0;
+  width: 80%;
+}
+.elemdesc h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  padding: auto;
+}
+.elemdesc p {
+  font-family: "Inter";
+  font-size: 0.9em;
+  font-weight: 200;
+}
+.elemdesc button {
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-family: "Inter";
+  padding: 15px 30px;
+  margin-right: 20px;
+}
+.viewbtn {
+  background-color: #ad8b3a;
+  border: none;
+  border: 1px solid #ad8b3a;
+  letter-spacing: 0.2em;
+  color: white;
+}
+.galbtn {
+  background-color: white;
+  border: 1px solid #ad8b3a;
+  letter-spacing: 0.2em;
+  color: #ad8b3a;
+}
+@media (max-width: 500px) {
+  .title {
     font-size: 1.5em;
-    padding: auto;
-}
-.elemdesc p{
-    font-family: "Inter";
-    font-size: 0.9em;
-    font-weight: 200;
-}
-.elemdesc button{
-    margin-top: 10px;
-    font-size: 0.9em;
-    font-family: "Inter";
-    padding: 15px 30px;
-    margin-right: 20px;
-}
-.viewbtn{
-    background-color: #ad8b3a;
-    border: none;
-    border: 1px solid #ad8b3a;
-    letter-spacing: 0.2em;
-    color: white;
-}
-.galbtn{
-    background-color: white;
-    border: 1px solid #ad8b3a;
-    letter-spacing: 0.2em;
-    color: #ad8b3a;
+  }
+  .elemimg {
+    width: 80%;
+    padding-left: 10.5%;
+  }
+  .desc {
+    font-size: 0.75em;
+  }
+  .leftButton {
+    transform: scale(0.75);
+    top:45%;
+  }
+  .rightButton {
+    top: 45%;
+    transform: scale(0.75);
+  }
+  .elemdesc {
+    padding-left: 30px;
+  }
+  .elemdesc h3{
+    font-size: 1em;
+    text-align: center;
+  }
+  .elemdesc p{
+    font-size: 0.75em;
+    text-align: center;
+  }
+  .elemdesc button{
+    padding: 10px 20px;
+    font-size: 0.75em;
+  }
 }

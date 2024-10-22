@@ -15,13 +15,13 @@ nav {
   display: flex;
   align-items: center;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content:flex-start;
   width: 45%;
   color: white;
   font-weight: 300;
   padding: 0.75em;
   letter-spacing: 0.1em;
-
+  gap: 3em;
 }
 .logo {
   margin-right: 2em;
@@ -46,6 +46,10 @@ nav {
     letter-spacing: 0.1em;
     color: white;
     font-family: "Inter";
-
 }
-
+@media(max-width:768px){
+  .container{
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -44,7 +44,16 @@ const BedroomCarousel = () => {
     autoplay: false,
     autoplaySpeed: 3000,
     centerMode: true, // Enable center mode to show partial slides
-    centerPadding: "250px", // Padding to show part of next/prev slides Remove extra padding between slides
+    centerPadding: "250px",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: "50px",
+          arrows: false,
+        },
+      },
+    ], // Padding to show part of next/prev slides Remove extra padding between slides
   };
 
   return (
@@ -91,9 +100,9 @@ const BedroomCarousel = () => {
               position: "relative",
             }}>
             <img
+              className={styles.elemimg}
               src={room.image}
               alt={room.title}
-              style={{ width: "90%", height: "auto", borderRadius: "" }} // Maintain the fixed width
             />
             <div className={styles.elemdesc}>
               <h3>{room.title}</h3>

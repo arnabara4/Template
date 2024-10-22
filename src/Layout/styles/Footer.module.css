@@ -17,7 +17,7 @@
 }
 .column {
   width: 45%;
-  height:min-content;
+  height: min-content;
 }
 .form form {
   display: flex;
@@ -79,7 +79,7 @@
 }
 .linkcolumn {
   width: 30%;
-  height:38vh;
+  height: 38vh;
 }
 .linkcolumn p {
   color: gray;
@@ -107,10 +107,61 @@
   font-weight: 500;
   letter-spacing: 0.05em;
   font-size: 0.8em;
-  height:min-content;
+  height: min-content;
 }
-.copyright{
+.copyright {
   padding: 1.25em;
   color: white;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .footlogo {
+    margin-left: 0;
+    transform: scale(0.8);
+    padding: 1em;
+  }
+  .info {
+    margin: 0 1em;
+  }
+  .column {
+    width: 30%;
+  }
+  .form p {
+    font-size: 0.6em;
+  }
+  .form input {
+    margin-right: 0;
+    font-size: 0.75em;
+    width: 100%;
+  }
+  .subscribe {
+    font-size: 0.75em;
+    padding: 0.5em 1em;
+    margin-top: 10px;
+  }
+  .elem {
+    margin-top: 1em;
+  }
+  .elem .head {
+    font-size: 0.6em;
+  }
+  .elem div {
+    font-size: 0.5em;
+    margin-top: 0.75em;
+  }
+  .linkcolumn {
+  }
+  .linkcolumn p {
+    font-size: 0.65em;
+  }
+  .linkcolumn ul {
+    font-size: 0.6em;
+  }
+  .smcolumn {
+    width: 20%;
+    font-size: 0.65em;
+  }
+  .copyright {
+    font-size: 0.75em;
+  }
 }
