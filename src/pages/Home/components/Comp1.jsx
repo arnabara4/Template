@@ -8,20 +8,16 @@ const Text = () => {
       id="about"
       className={styles.txt1wrapper}>
       <div className={styles.txt1}>
-        <span>- OUR LEGENDARY FLAGSHIP</span>
+        <span>- ABOUT US</span>
         <p>
-          The Taj Mahal Palace, Mumbai, offers stunning views of the Gateway of
-          India and Arabian Sea. Since 1903, it has hosted royalty and
-          dignitaries, blending heritage with modern luxury. Enjoy opulent
-          rooms, lush gardens, fine dining, and personalized services, all just
-          an hour from the airport. Experience world-class hospitality in the
-          heart of the city’s rich history.
+
+          {/* ISKO CHANGE KARNA HE  */}
+          Welcome to Camp Kasbah, your ultimate escape into nature's beauty. Nestled beside a serene river with breathtaking scenic views, our property offers a unique blend of camping, glamping, and outdoor adventure. Enjoy the peace and tranquillity of riverside camping combined with the comforts of our luxurious glamping accommodations.<br></br>
+At Camp Kasbah , reconnect with nature as you breathe in the fresh mountain air, dip your toes in the cool, natural water streams, and let the sounds of the river soothe you. Thrill-seekers can experience the excitement of river crossing or explore the pristine surroundings. Our team is here to make sure your stay is as comfortable and memorable as possible, with amenities designed for relaxation and adventure.
+
         </p>
       </div>
-      <img
-        src={Pic1}
-        alt="pic"
-      />
+      
     </div>
   );
 };

@@ -24,39 +24,34 @@ const Footer = () => {
           <div className={styles.elem}>
             <p className={styles.head}>FOR BOOOKING CONTACT</p>
             <div>
-              <p>1-800-111-825 </p>
-              <p>reservations@ihcltata.com</p>
+              <p> 8448320407</p>
+              <p>peaktrail.hotels@gmail.com</p>
             </div>
           </div>
-          <div className={styles.elem}>
+          {/* <div className={styles.elem}>
             <p className={styles.head}>CUSTOMER SUPPORT</p>
             <div>
               <p>contacttaj@tajhotels.com</p>
               <p>website.feedback@tajhotels.com</p>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={styles.linkcolumn}>
           <p>QUICK LINKS</p>
           <ul>
-            <li>Hotels</li>
-            <li>Dining</li>
-            <li>Wellness</li>
-            <li>
-              Timeless <br /> Wedding
-            </li>
-            <li>Event Venues</li>
-            <li>Taj Magazine</li>
+            <li>About Us</li>
+            
+            <li>Attraction</li>
+            <li>Rooms</li>
+            <li>Dinning</li>
             <li>Sitemap</li>
-            <li>About Taj</li>
-            <li>Offers</li>
-            <li>Blog</li>
+            
           </ul>
         </div>
         <div className={styles.smcolumn}>CONNECT WITH US</div>
       </div>
       <p className={styles.copyright}>
-        © 2024 The Indian Hotels Company Limited. All Rights Reserved.
+        © 2024 Kasba Camp.
       </p>
       <hr />
     </div>

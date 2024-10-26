@@ -3,31 +3,41 @@ import Slider from "react-slick";
 import "./BedroomCarousel.css"; // Create this file for custom styles
 import styles from "./BedroomCarousel.module.css";
 import { useRef } from "react";
-
+import tent from "../../assets/tent.webp"
+import single from "../../assets/Double.webp"
+import triple from "../../assets/triple.webp"
+import quad from "../../assets/quad.webp"
 const roomData = [
   {
     image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/d6164d18fb65eae98c953178f200075ea19a5069-1400x1120.jpg?w=768&fm=webp&dpr=2",
-    title: "Luxury Room",
+      tent,
+    title: "Swiss tents with attached bathroom",
     description:
       "A spacious luxury room with a breathtaking view of the Arabian Sea.",
   },
   {
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/cc4b61416955c27cb5babc5b529feab7c0faf824-1400x1120.jpg?w=768&fm=webp&dpr=2",
-    title: "Palace Room",
+    image:single
+      ,
+    title: "Single Sharing",
     description: "Elegant room with exquisite furnishing and modern amenities.",
   },
   {
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/38a3f5c1e3dcc73ad6fa977276be8e901db41690-1401x1120.jpg?w=768&fm=webp&dpr=2",
-    title: "LUXURIOUS GRANDE ROOM SEA VIEW KING SIZE BED",
+    image:single
+      ,
+    title: "Double sharing",
     description: "Experience the ultimate comfort with private lounge access.",
   },
   {
     image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/e89ab90be5e070c45ca81e512935244e59310ff8-1400x1108.jpg?w=768&fm=webp&dpr=2",
-    title: "Presidential Suite",
+      
+    triple,
+    title: "Triple sharing",
+    description: "Luxurious suite offering unparalleled elegance and luxury.",
+  },
+  {
+    image:
+      quad,
+    title: "Quad sharing",
     description: "Luxurious suite offering unparalleled elegance and luxury.",
   },
 ];
@@ -65,7 +75,8 @@ const BedroomCarousel = () => {
         maxWidth: "1200px",
         margin: "0 auto",
         marginTop: "30px",
-      }}>
+      }}
+      className={styles.container}>
       <div className={styles.titletext}>
         <p className={styles.title}>
           - <p>Luxury Rooms & Suites at The Taj Mahal Palace, Mumbai</p> -
@@ -103,13 +114,14 @@ const BedroomCarousel = () => {
               className={styles.elemimg}
               src={room.image}
               alt={room.title}
+              // className={styles}
             />
             <div className={styles.elemdesc}>
               <h3>{room.title}</h3>
               <p>{room.description}</p>
               <div>
-                <button className={styles.viewbtn}>VIEW RATES</button>
-                <button className={styles.galbtn}>GALLERY</button>
+                <button className={styles.viewbtn}>BOOK NOW</button>
+                {/* <button className={styles.galbtn}>GALLERY</button> */}
               </div>
             </div>
           </div>
