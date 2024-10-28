@@ -26,12 +26,30 @@ const Navbar = () => {
           <li
             to="/dining"
             className={styles.nav}>
-            CAFE
+            DINING
+          </li>
+        </a>
+        <a
+          href="#attractions"
+          style={{ textDecoration: "none", color: "inherit" }}>
+          <li
+            // to="/dining"
+            className={styles.nav}>
+            ATTRACTIONS
+          </li>
+        </a>
+        <a
+          href="#aboutus"
+          style={{ textDecoration: "none", color: "inherit" }}>
+          <li
+            // to="/dining"
+            className={styles.nav}>
+            ABOUT US
           </li>
         </a>
       </nav>
-      {/* <div className={styles.login}>LOGIN / JOIN</div>
-      <button className={styles.book}>BOOK A STAY</button> */}
+      {/* <div className={styles.login}>LOGIN / JOIN</div> */}
+      <button className={styles.book}>BOOK A STAY</button>
     </div>
   );
 };

@@ -7,6 +7,7 @@
   gap: 1.2em;
   position:fixed;
   width: 100%;
+  float: inline-end;
 }
 nav {
   font-family: "Inter";
@@ -16,12 +17,12 @@ nav {
   align-items: center;
   list-style-type: none;
   justify-content:flex-start;
-  width: 45%;
+  width: 60%;
   color: white;
   font-weight: 300;
   padding: 0.75em;
   letter-spacing: 0.1em;
-  gap: 3em;
+  gap: 2em;
 }
 .logo {
   margin-right: 2em;
@@ -46,6 +47,7 @@ nav {
     letter-spacing: 0.1em;
     color: white;
     font-family: "Inter";
+    float: inline-end;
 }
 @media(max-width:768px){
   .container{
