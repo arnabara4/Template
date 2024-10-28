@@ -1,8 +1,17 @@
 .header {
-  background-image: url("/headerbg.webp"); /* Replace with your image path */
-  background-size: cover; /* Scales the image to cover the entire container */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
-  height: 100vh; /* Example height */
+  position: relative;
   width: 100%;
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
