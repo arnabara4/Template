@@ -1,18 +1,6 @@
 .contain {
   position: relative;
   margin-top: 0;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.container {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-.container::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
 }
 .container {
   display: flex;
@@ -28,9 +16,7 @@
   grid-template-columns: repeat(6, 25vw);
   column-gap: 4vw;
   scroll-behavior: smooth;
-  scrollbar-width: none;
 }
-
 .card {
   display: flex;
   flex-direction: column;

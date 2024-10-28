@@ -5,25 +5,12 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className={styles.container}>
+      <img
+        className={styles.logo}
+        src="/logo.png"
+        alt="pic"
+      />
       <nav>
-        <a
-          href="#about"
-          style={{ textDecoration: "none", color: "inherit" }}>
-          <li
-            to="/about"
-            className={styles.nav}>
-            ABOUT US
-          </li>
-        </a>
-        <a
-          href="#attractions"
-          style={{ textDecoration: "none", color: "inherit" }}>
-          <li
-            to="/attractions"
-            className={styles.nav}>
-            ATTRACTIONS
-          </li>
-        </a>
         <a
           href="#Rooms"
           style={{ textDecoration: "none", color: "inherit" }}>
@@ -39,7 +26,7 @@ const Navbar = () => {
           <li
             to="/dining"
             className={styles.nav}>
-            DINING
+            CAFE
           </li>
         </a>
       </nav>

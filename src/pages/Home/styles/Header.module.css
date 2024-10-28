@@ -1,9 +1,8 @@
 .header {
-  /* background-image: url("/headerbg.webp"); */
-   /* Replace with your image path */
+  background-image: url("/headerbg.webp"); /* Replace with your image path */
   background-size: cover; /* Scales the image to cover the entire container */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
-  height: 100px; /* Example height */
+  height: 100vh; /* Example height */
   width: 100%;
 }

@@ -106,8 +106,7 @@ const CafeCarousel = () => {
         maxWidth: "1200px",
         margin: "0 auto",
         marginTop: "30px",
-      }}
-      className={styles.container}>
+      }}>
       <div className={styles.titletext}>
         <p className={styles.title}>
           - <p>Restaurants at The Taj Mahal Palace, Mumbai</p> -

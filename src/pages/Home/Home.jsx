@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./components/Header";
-import BackgroundVideo from "./components/BackgroundVideo.jsx";
 import Comp1 from "./components/Comp1";
 import Text2 from "./components/Text2.jsx";
 import HotelInfo from "./components/HotelInfo.jsx";
@@ -10,12 +9,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CafeCarousel from "./components/Carousel3/CafeCarousel.jsx";
 
-
 const Home = () => {
   return (
     <>
       <Header />
-      <BackgroundVideo />
       <Comp1 />
       <Text2 />
       <BedroomCarousel />
