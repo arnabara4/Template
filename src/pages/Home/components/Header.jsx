@@ -13,7 +13,7 @@ const Header = () => {
         poster="/poster.jpg">
         <source
           src="/casba.webm"
-          type="video/mp4"
+          type="video/webm"
         />
       </video>
     </div>
