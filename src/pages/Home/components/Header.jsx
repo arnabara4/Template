@@ -10,8 +10,8 @@ const Header = () => {
         playsInline
         loop>
         <source
-          src="/casba.webm"
-          type="video/webm"
+          src="/casba.mp4"
+          type="video/mp4"
         />
       </video>
     </div>
