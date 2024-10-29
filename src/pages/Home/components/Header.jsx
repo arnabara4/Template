@@ -8,7 +8,9 @@ const Header = () => {
         autoPlay
         muted
         playsInline
-        loop>
+        loop
+        preload="none"
+        poster="/poster.jpg">
         <source
           src="/casba.mp4"
           type="video/mp4"
