@@ -8,9 +8,7 @@ const Header = () => {
         autoPlay
         muted
         playsInline
-        loop
-        preload="none"
-        poster="/poster.jpg">
+        loop>
         <source
           src="/casba.webm"
           type="video/webm"
