@@ -12,7 +12,7 @@ const Header = () => {
         preload="none"
         poster="/poster.jpg">
         <source
-          src="/casba.mp4"
+          src="/casba.webm"
           type="video/mp4"
         />
       </video>
