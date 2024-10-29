@@ -8,7 +8,8 @@ const Header = () => {
         autoPlay
         muted
         playsInline
-        loop>
+        loop
+        preload="auto">
         <source
           src="/casba.mp4"
           type="video/mp4"
