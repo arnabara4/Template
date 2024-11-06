@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Header.module.css";
+import NamaGal from "./NamaGal";
 
 const Header = () => {
   return (
@@ -15,6 +16,7 @@ const Header = () => {
           type="video/mp4"
         />
       </video>
+      <NamaGal />
     </div>
   );
 };

@@ -3,31 +3,31 @@ import Slider from "react-slick";
 import "./BedroomCarousel.css"; // Create this file for custom styles
 import styles from "./BedroomCarousel.module.css";
 import { useRef } from "react";
+import tent from "./assets/tents.jpg";
+import quad from "./assets/Quad.jpg";
+import triple from "./assets/triple.jpg";
+import double from "./assets/double.jpg";
 
 const roomData = [
   {
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/d6164d18fb65eae98c953178f200075ea19a5069-1400x1120.jpg?w=768&fm=webp&dpr=2",
-    title: "Luxury Room",
+    image: tent,
+    title: "SWISS TENTS",
     description:
       "A spacious luxury room with a breathtaking view of the Arabian Sea.",
   },
   {
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/cc4b61416955c27cb5babc5b529feab7c0faf824-1400x1120.jpg?w=768&fm=webp&dpr=2",
-    title: "Palace Room",
+    image: quad,
+    title: "QUAD SHARING",
     description: "Elegant room with exquisite furnishing and modern amenities.",
   },
   {
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/38a3f5c1e3dcc73ad6fa977276be8e901db41690-1401x1120.jpg?w=768&fm=webp&dpr=2",
-    title: "LUXURIOUS GRANDE ROOM SEA VIEW KING SIZE BED",
+    image: triple,
+    title: "TRIPLE SHARING",
     description: "Experience the ultimate comfort with private lounge access.",
   },
   {
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/e89ab90be5e070c45ca81e512935244e59310ff8-1400x1108.jpg?w=768&fm=webp&dpr=2",
-    title: "Presidential Suite",
+    image: double,
+    title: "DOUBLE SHARING",
     description: "Luxurious suite offering unparalleled elegance and luxury.",
   },
 ];
@@ -41,7 +41,7 @@ const BedroomCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true, // Enable center mode to show partial slides
     centerPadding: "250px",
@@ -68,18 +68,19 @@ const BedroomCarousel = () => {
       }}>
       <div className={styles.titletext}>
         <p className={styles.title}>
-          - <p>Luxury Rooms & Suites at The Taj Mahal Palace, Mumbai</p> -
+          - <p>Camp Kasbah: Comfort and Adventure in the Desert</p> -
         </p>
         <p className={styles.desc}>
-          Indulge in the opulent tranquility of our luxury rooms and suites at
-          The Taj Mahal Palace, Mumbai.{" "}
+          Camp Kasbah offers a range of accommodations to suit every traveler,
+          from cozy Nomad Rooms for adventure seekers to luxurious Oasis Villas
+          for those craving extra comfort.{" "}
           {!more ? <span onClick={() => setMore(true)}>{"..>>"}</span> : ""}
           <p className={more ? styles.show : styles.dont}>
-            Adorned with fine natural materials and period art, each space
-            offers an exquisite retreat, where heritage seamlessly meets modern
-            comfort. Experience personalized service and unparalleled elegance,
-            ensuring an unforgettable stay in the heart of Mumbai's history and
-            culture.
+            Guests can choose from Deluxe Desert View Tents with breathtaking
+            views, spacious Family Safari Suites perfect for group stays, or
+            eco-friendly Glamping Pods for a sustainable desert experience. Each
+            room combines rustic charm with modern comfort, ensuring a memorable
+            stay surrounded by the stunning beauty of the desert landscape.
             {more ? <span onClick={() => setMore(false)}>{"<<"}</span> : ""}
           </p>
         </p>

@@ -113,7 +113,7 @@
   }
   .leftButton {
     transform: scale(0.75);
-    top:45%;
+    top: 45%;
   }
   .rightButton {
     top: 45%;
@@ -122,15 +122,15 @@
   .elemdesc {
     padding-left: 30px;
   }
-  .elemdesc h3{
+  .elemdesc h3 {
     font-size: 1em;
     text-align: center;
   }
-  .elemdesc p{
+  .elemdesc p {
     font-size: 0.75em;
     text-align: center;
   }
-  .elemdesc button{
+  .elemdesc button {
     padding: 10px 20px;
     font-size: 0.75em;
   }

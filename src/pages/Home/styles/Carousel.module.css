@@ -13,7 +13,7 @@
 .Carousel {
   overflow: auto;
   display: grid;
-  grid-template-columns: repeat(6, 25vw);
+  grid-template-columns: repeat(4, 40vw);
   column-gap: 4vw;
   scroll-behavior: smooth;
 }
@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 4vh;
-  width: 25vw;
+  width: 40vw;
   padding: 15px;
   padding-top: 6vh;
   justify-content: center;

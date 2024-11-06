@@ -1,7 +1,7 @@
 .container {
   display: flex;
   z-index: 10;
-  background: linear-gradient(to bottom, #0000006b, #fffafa00);
+  background: linear-gradient(to bottom, #000000c2, #00000000);
   align-items: center;
   padding: 0em 1em;
   gap: 1.2em;
@@ -27,8 +27,7 @@ nav {
 }
 .logo {
   margin-right: 2em;
-  padding: 1em;
-  width: 5%;
+  width: 10%;
   height: auto;
 }
 .login {
@@ -49,25 +48,75 @@ nav {
   color: white;
   font-family: "Inter";
   float: inline-end;
-  margin-right: 1.25em;
+  margin-left: 3em;
+}
+.menu_open,
+.menu_close {
+  display: none;
+}
+.nav button {
+  display: none;
+}
+.bookmobile{
+  display: none;
 }
 @media (max-width: 768px) {
   .container {
     width: 100%;
-    padding: 0;
     gap: 0.75em;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .bookmobile {
+    display: block;
+    white-space: nowrap;
+    background-color: #ad8b3a;
+    padding: 1em 2em;
+    font-size: 0.5em;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: white;
+    font-family: "Inter";
+    float: inline-end;
+  }
+  .menu_open,
+  .menu_close {
+    cursor: pointer;
+    z-index: 50;
+    display: none;
+    margin-right: 0.5em;
+  }
+  .btnshow {
+    display: block;
   }
   nav {
     gap: 0.5em;
     font-size: 1em;
     padding: 0.75em;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background: linear-gradient(to bottom, #000000c2, #00000000);
+    width: 100%;
+    top: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .show {
+    transform: translateY(0);
+  }
+  nav a {
+    margin-top: 1.25rem;
   }
   .logo {
     margin-right: 0;
-    padding: 0.75em;
-    width: 7%;
+    width: 20%;
   }
-  .book{
-    font-size: 0.5em;
+  .book {
+    display: none;
+  }
+  .nav button {
+    display: block;
   }
 }

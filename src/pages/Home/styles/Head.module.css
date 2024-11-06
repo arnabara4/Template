@@ -6,7 +6,7 @@
   flex-direction: row;
   align-items: center;
   position: absolute;
-  bottom: 14vh;
+  bottom: 15vh;
   left: 6.3vw;
   color: white;
   font-family: "Cinzel", serif;
@@ -48,7 +48,6 @@
   }
   .NameGal {
     padding-top: 20vh;
-    position: static;
     font-size: 3em;
     justify-content: space-around;
     flex-direction: column;
@@ -85,4 +84,5 @@
   .NameGal {
     font-size: 2.5em;
   }
+
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Comp1.module.css";
-import Pic1 from "/pic1.webp";
+import Pic1 from "/pic1.jpg";
 
 const Text = () => {
   return (
@@ -8,14 +8,13 @@ const Text = () => {
       id="about"
       className={styles.txt1wrapper}>
       <div className={styles.txt1}>
-        <span>- OUR LEGENDARY FLAGSHIP</span>
+        <span>- CAMP KASBAH</span>
         <p>
-          The Taj Mahal Palace, Mumbai, offers stunning views of the Gateway of
-          India and Arabian Sea. Since 1903, it has hosted royalty and
-          dignitaries, blending heritage with modern luxury. Enjoy opulent
-          rooms, lush gardens, fine dining, and personalized services, all just
-          an hour from the airport. Experience world-class hospitality in the
-          heart of the city’s rich history.
+          Welcome to Camp Kasbah, your ultimate escape into nature's beauty.
+          Nestled beside a serene river with breathtaking scenic views, our
+          property offers a unique blend of camping, glamping, and outdoor
+          adventure. Enjoy the peace and tranquillity of riverside camping
+          combined with the comforts of our luxurious glamping accommodations.
         </p>
       </div>
       <img

@@ -3,12 +3,14 @@ import Slider from "react-slick";
 import "./CafeCarousel.css"; // Create this file for custom styles
 import styles from "./CafeCarousel.module.css";
 import { useRef } from "react";
+import dine1 from "./assets/dine1.jpg";
+import dine2 from "./assets/dine2.jpg";
+import dine3 from "./assets/dine3.jpg";
 
 const roomData = [
   {
     name: "WASABI NO MORIMOTO",
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/e07563e2cf1405cf81f14341e8ce783bce8a538d-1400x1120.jpg?w=768&fm=webp&dpr=2",
+    image: dine1,
     description:
       "This award-winning Japanese restaurant offers an authentic dining experience with stunning flavors and fresh ingredients crafted by Chef Morimoto.",
     link: "https://www.tajhotels.com/en-in/hotels/taj-mahal-palace-mumbai/restaurants/wasabi-by-morimoto/",
@@ -18,8 +20,7 @@ const roomData = [
   },
   {
     name: "GOLDEN DRAGON",
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/4c9a3c38b7d4cb85c2c6455b2647a5ee78252a2b-3878x3102.jpg?w=768&fm=webp&dpr=2",
+    image: dine2,
     description:
       "Renowned for its Szechuan and Cantonese cuisine, the Golden Dragon is an iconic restaurant that brings a legacy of exceptional Chinese dining.",
     link: "https://www.tajhotels.com/en-in/hotels/taj-mahal-palace-mumbai/restaurants/golden-dragon/",
@@ -29,8 +30,7 @@ const roomData = [
   },
   {
     name: "SOUK",
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/1bde5aa0b8d9b05ac62c786827d3361eee8039ff-1400x1120.jpg?w=768&fm=webp&dpr=2",
+    image: dine3,
     description:
       "Offering a rooftop Mediterranean experience, Souk serves a variety of dishes from Morocco, Turkey, Egypt, and Lebanon, with stunning views of the city and the Arabian Sea.",
     link: "https://www.tajhotels.com/en-in/hotels/taj-mahal-palace-mumbai/restaurants/souk/",
@@ -38,41 +38,8 @@ const roomData = [
     timing: "12:30 PM - 3:00 PM, 7:00 PM - 11:30 PM",
     number: "+91-22-6665-3366",
   },
-  {
-    name: "SHAMINA",
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/3edf16128bb9da2f201706bf18818f50dcd7cd91-1050x840.jpg?w=768&fm=webp&dpr=2",
-    description:
-      "A legendary all-day dining venue that serves global cuisine with an emphasis on seasonal ingredients and classic flavors.",
-    link: "https://www.tajhotels.com/en-in/hotels/taj-mahal-palace-mumbai/restaurants/shamiana/",
-    cuisine: "Indian, International",
-    timing: "24 hours",
-    number: "+91-22-6665-3366",
-  },
-
-  {
-    name: "LA PATISSERIE",
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/f1153a4c63bcff2df2b8034e3d05e1b94e4647fa-1400x1120.png?w=768&fm=webp&dpr=2",
-    description:
-      "Innovative and contemporary, Masala Kraft presents a delightful fusion of modern Indian cuisine with traditional flavors.",
-    link: "https://www.tajhotels.com/en-in/hotels/taj-mahal-palace-mumbai/restaurants/masala-kraft/",
-    cuisine: "French",
-    timing: "8:00 AM - 10:00 PM",
-    number: "+91-22-6665-3366",
-  },
-  {
-    name: "AQUARIUS",
-    image:
-      "https://cdn.sanity.io/images/ocl5w36p/production/7bf8901d200b7f6551ae1d88536dc08057397472-1400x1120.png?w=768&fm=webp&dpr=2",
-    description:
-      "Located by the poolside, Aquarius offers light snacks, refreshing beverages, and a relaxing ambiance for an enjoyable meal or drink.",
-    link: "https://www.tajhotels.com/en-in/hotels/taj-mahal-palace-mumbai/restaurants/aquarius/",
-    cuisine: "Snacks, Beverages",
-    timing: "11:00 AM - 8:00 PM",
-    number: "+91-22-6665-3366",
-  },
 ];
+
 const CafeCarousel = () => {
   const sliderRef = useRef(null);
   const [more, setMore] = useState(false);
@@ -109,19 +76,18 @@ const CafeCarousel = () => {
       }}>
       <div className={styles.titletext}>
         <p className={styles.title}>
-          - <p>Restaurants at The Taj Mahal Palace, Mumbai</p> -
+          - <p>Camp Kasbah Dining: Flavorful Desert Experiences</p> -
         </p>
         <p className={styles.desc}>
-          Tuck into our culinary delights meticulously crafted by our master
-          chefs at The Taj Mahal Palace, Mumbai.{" "}
+          At Camp Kasbah, dining is a delightful journey through rich flavors
+          and culinary traditions.{" "}
           {!more ? <span onClick={() => setMore(true)}>{"..>>"}</span> : ""}
           <p className={more ? styles.show : styles.dont}>
-            Discover a splendid array of dining and bar options, featuring some
-            of the best restaurants in Mumbai. From Indian and Chinese cuisines
-            to delectable international offerings, savour the enchantment of
-            5-star restaurants in Mumbai. Our skilled mixologists and sommeliers
-            await to guide you through an exploration of inventive cocktails and
-            exceptional vintages from our carefully curated collection.
+            Guests can savor authentic local dishes crafted with fresh, locally
+            sourced ingredients, all while enjoying stunning views of the desert
+            landscape. Whether dining under the stars or in our cozy restaurant,
+            each meal promises a unique experience that combines the essence of
+            the desert with warm hospitality.
             {more ? <span onClick={() => setMore(false)}>{"<<"}</span> : ""}
           </p>
         </p>

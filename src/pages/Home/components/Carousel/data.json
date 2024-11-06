@@ -1,40 +1,28 @@
 {
   "reviews": [
     {
-      "review": "ICONIC ARCHITECTURE",
-      "img": "/cpic1.webp",
+      "review": "VALLEY PROPERTY",
+      "img": "/cpic1.jpg",
       "name": "Kishshana Palmer",
       "profession": "Teacher"
     },
     {
-      "review": "LEGACY OF 120 YEARS",
-      "img": "/cpic2.webp",
+      "review": "ADVENTURE WALK",
+      "img": "/cpic2.png",
       "name": "Sandy Rees",
       "profession": "Teacher"
     },
     {
-      "review": "PERSONALISED BUTLER SERVICE",
-      "img": "/cpic3.webp",
+      "review": "REMOTE IN NATURE",
+      "img": "/cpic4.jpg",
       "name": "Tayyab Yunus",
       "profession": "CEO"
     },
     {
-      "review": "DAILY AFTERNOON TEA RITUALS",
-      "img": "/cpic4.webp",
+      "review": "PROPERTY OWNED RIVER",
+      "img": "/cpic3.png",
       "name": "Kishshana Palmer",
       "profession": "Teacher"
-    },
-    {
-      "review": "OVERLOOKING GATEWAY OF INDIA",
-      "img": "/cpic5.webp",
-      "name": "Sandy Rees",
-      "profession": "Teacher"
-    },
-    {
-      "review": "AWARD WINNING WASABI RESTAURANT ",
-      "img": "/cpic6.webp",
-      "name": "Tayyab Yunus",
-      "profession": "CEO"
     }
   ]
 }

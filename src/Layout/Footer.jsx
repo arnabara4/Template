@@ -24,15 +24,15 @@ const Footer = () => {
           <div className={styles.elem}>
             <p className={styles.head}>FOR BOOOKING CONTACT</p>
             <div>
-              <p>1-800-111-825 </p>
-              <p>reservations@ihcltata.com</p>
+              <p>8448320407</p>
+              <p>peaktrail.hotels@gmail.com</p>
             </div>
           </div>
           <div className={styles.elem}>
             <p className={styles.head}>CUSTOMER SUPPORT</p>
             <div>
-              <p>contacttaj@tajhotels.com</p>
-              <p>website.feedback@tajhotels.com</p>
+              <p>8448320407</p>
+              <p>peaktrail.hotels@gmail.com</p>
             </div>
           </div>
         </div>
